@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "script-creator",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "preact build",
+    "serve": "sirv build --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-preact-pure": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-preset-preact": "^1.0.0",
+    "preact-cli": "^3.0.0-rc.6",
+    "preact-render-spy": "^1.2.1",
+    "sirv-cli": "^0.4.5"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@projectstorm/react-canvas-core": "^6.1.1",
+    "@projectstorm/react-diagrams": "^6.0.1-beta.7",
+    "closest": "^0.0.1",
+    "dagre": "^0.8.5",
+    "flowpoints": "^1.0.16",
+    "lodash": "^4.17.15",
+    "mathjs": "^6.6.5",
+    "pathfinding": "^0.4.18",
+    "paths-js": "^0.4.10",
+    "preact": "^10.3.2",
+    "preact-render-to-string": "^5.1.4",
+    "preact-router": "^3.2.1",
+    "react": "^16.13.1",
+    "storm-react-diagrams": "^5.2.1"
+  },
+  "jest": {
+    "preset": "jest-preset-preact",
+    "setupFiles": [
+      "<rootDir>/tests/__mocks__/browserMocks.js",
+      "<rootDir>/tests/__mocks__/setupTests.js"
+    ]
+  }
+}
